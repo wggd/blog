@@ -4,6 +4,12 @@
     <title><![CDATA[hexo公益404页面，页面样式错乱。]]></title>
     <url>%2F2017%2F07%2F14%2Fhexo%E5%85%AC%E7%9B%8A404%E9%A1%B5%E9%9D%A2%EF%BC%8C%E9%A1%B5%E9%9D%A2%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1%E3%80%82%2F</url>
     <content type="text"><![CDATA[问题hexo公益404页面，部署好上传github，页面样式错乱。打开网页调试工具会发现有如下错误: 123Mixed Content: The page at &apos;https://(xxx)&apos; was loaded over HTTPS,but requested an insecure script ... This request has beenblocked; the content must be served over HTTPS. 原因主要是Github Pages强制要求https，所以文档内对js和css的请求都需要经过https传输的才行，而腾讯的404公益页面js中包含http请求. 解决方法删除hexo目录中/source/下404页面 把404页面放在主题目录中的/source/下就ok了]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
